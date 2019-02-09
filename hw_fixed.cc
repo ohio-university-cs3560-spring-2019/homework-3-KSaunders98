@@ -1,6 +1,10 @@
+/// \file
 #include <iostream>
 #include <cmath>
 
+/// \brief Calculate the standard deviation of a set of numbers
+/// \param a - The array of numbers to calculate the standard deviation of
+/// \param n - The size of the set of numbers
 double deviation( int* a, int n )
 {
 	int sum = 0;

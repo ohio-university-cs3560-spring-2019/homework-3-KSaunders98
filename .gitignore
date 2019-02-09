@@ -1,6 +1,10 @@
 # vscode folder
 .vscode/
 
+# doxygen output folders
+html/
+latex/
+
 # Executables
 a
 a.exe
