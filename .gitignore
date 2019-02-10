@@ -12,6 +12,8 @@ latex/**
 !latex/refman.pdf
 !latex/refman.tex
 !latex/hw__fixed_8cc.tex
+!latex/stddev.tex
+!latex/stddev.pdf
 
 # Executables
 a
