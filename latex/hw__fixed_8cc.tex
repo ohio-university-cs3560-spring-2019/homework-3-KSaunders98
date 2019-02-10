@@ -1,0 +1,42 @@
+\hypertarget{hw__fixed_8cc}{}\section{hw\+\_\+fixed.\+cc File Reference}
+\label{hw__fixed_8cc}\index{hw\+\_\+fixed.\+cc@{hw\+\_\+fixed.\+cc}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for hw\+\_\+fixed.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{hw__fixed_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{hw__fixed_8cc_a9cfdbe00bb990c14c3a9e59a7dbbc974}{deviation} (int $\ast$a, int n)
+\begin{DoxyCompactList}\small\item\em Calculate the standard deviation of a set of numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{hw__fixed_8cc_a9cfdbe00bb990c14c3a9e59a7dbbc974}\label{hw__fixed_8cc_a9cfdbe00bb990c14c3a9e59a7dbbc974}} 
+\index{hw\+\_\+fixed.\+cc@{hw\+\_\+fixed.\+cc}!deviation@{deviation}}
+\index{deviation@{deviation}!hw\+\_\+fixed.\+cc@{hw\+\_\+fixed.\+cc}}
+\subsubsection{\texorpdfstring{deviation()}{deviation()}}
+{\footnotesize\ttfamily double deviation (\begin{DoxyParamCaption}\item[{int $\ast$}]{a,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Calculate the standard deviation of a set of numbers. 
+
+Uses the formula:
+
+$$\sigma = \frac{\sum\limits_{i=1}^n (\bar{x}-x_i)^2}{n}$$
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ The array of numbers to calculate the standard deviation of \\
+\hline
+{\em n} & -\/ The size of the set of numbers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double precision number of the standard deviation 
+\end{DoxyReturn}

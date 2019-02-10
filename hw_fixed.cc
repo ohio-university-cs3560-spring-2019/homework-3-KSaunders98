@@ -5,6 +5,7 @@
 /// \brief Calculate the standard deviation of a set of numbers
 /// \param a - The array of numbers to calculate the standard deviation of
 /// \param n - The size of the set of numbers
+/// \return A double precision number of the standard deviation
 double deviation( int* a, int n )
 {
 	int sum = 0;
