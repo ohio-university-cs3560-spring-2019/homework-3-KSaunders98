@@ -4,9 +4,6 @@
 # doxygen config
 doxyconfig.conf
 
-# doxygen html
-html/**
-
 # doxygen latex
 latex/**
 !latex/refman.pdf
