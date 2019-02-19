@@ -1,9 +1,9 @@
 import sys
 
-count = 0
-
+# get last line of stdin
+line = ""
 for line in sys.stdin:
-    words = line.split()
-    count += int(words[0])
+    pass
 
-print(count)
+words = line.split()
+print(words[0])
