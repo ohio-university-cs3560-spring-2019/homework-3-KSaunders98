@@ -1,1 +1,1 @@
-wc * | python wordcount.py
+wc -w * | python wordcount.py

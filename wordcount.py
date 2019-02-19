@@ -4,6 +4,6 @@ count = 0
 
 for line in sys.stdin:
     words = line.split()
-    count += len(words)
+    count += int(words[0])
 
 print(count)
