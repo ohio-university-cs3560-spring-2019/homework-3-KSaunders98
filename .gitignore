@@ -15,3 +15,6 @@ latex/**
 # Executables
 a
 a.exe
+
+# Test case files
+hw6/input.txt
