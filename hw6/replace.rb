@@ -1,7 +1,7 @@
 str = STDIN.read
 
 #preserves case of characters, including replaced characters
-str = str.gsub(/\b[fF]\S+/) {
+str = str.gsub(/\b[fF]\w+/) {
 	|m|
 	first = ""
 	if m[0] == "f" then
@@ -17,25 +17,23 @@ str = str.gsub(/\b[fF]\S+/) {
 	end
 	first + second + m[1, m.length - 1]
 }
-str = str.gsub(/(\S+)[sS][hH]\b/) {
+str = str.gsub(/\B[sS][hH]\b/) {
 	|m|
 	first = ""
-	if m[m.length - 2] == "s" then
+	if m[0] == "s" then
 		first = "t"
 	else
 		first = "T"
 	end
 	second = ""
-	if m[m.length - 1] == "h" then
+	if m[1] == "h" then
 		second = "i"
 	else
 		second = "I"
 	end
-	m[0, m.length - 2] + first + second
+	first + second
 }
-str = str.gsub(/(\S+)s[hH]\b/, '\1t')
-str = str.gsub(/(\S+)S[Hh]\b/, '\1T')
-str = str.gsub(/(?<=\w)i(?=\w)/, 'o')
-str = str.gsub(/(?<=\w)I(?=\w)/, 'O')
+str = str.gsub(/\Bi\B/, 'o')
+str = str.gsub(/\BI\B/, 'O')
 
 puts str
