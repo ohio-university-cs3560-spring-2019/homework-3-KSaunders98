@@ -6,4 +6,4 @@ for line in sys.stdin:
     pass
 
 words = line.split()
-print(words[0] + " " + words[1] + " " + words[2])
+print("Lines: " + words[0] + " Words: " + words[1] + " Characters: " + words[2])
