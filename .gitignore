@@ -18,3 +18,6 @@ a.exe
 
 # Test case files
 hw6/input.txt
+
+# HW7 test main
+hw7/main.cpp
