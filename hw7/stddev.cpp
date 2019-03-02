@@ -2,7 +2,6 @@
 
 #include <cmath>
 #include <cstdarg>
-#include <exception>
 
 double stddev(unsigned int count, ...) {
 	if (count == 0) {
@@ -28,6 +27,8 @@ double stddev(unsigned int count, ...) {
 		double dif = va_arg(args_copy, int) - mean;
 		dev += dif * dif;
 	}
+
+	va_end(args_copy);
 
 	return sqrt(dev / count);
 }
